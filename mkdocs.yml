@@ -14,6 +14,8 @@ plugins:
   - search
   - mermaid2:
       version: 8.8.2
+      arguments:
+        theme: dark # change this as you see fit
 
 markdown_extensions:
   - admonition
@@ -54,4 +56,5 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-- Overview: ../README.md  
+- Overview: index.md
+- Extensions Installed Overview: extensions.md
