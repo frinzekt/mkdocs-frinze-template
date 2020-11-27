@@ -1,5 +1,6 @@
 site_name: MkDocs Frinze Template
 copyright: Copyright Frinze Erin Lapuz 2020
+repo_url: https://github.com/frinzekt/mkdocs-frinze-template/tree/main
 theme:
   name: material
   custom_dir: overrides

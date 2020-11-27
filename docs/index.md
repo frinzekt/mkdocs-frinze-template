@@ -9,7 +9,7 @@ For full documentation visit:
 
 ## How easy is this to deploy?
 
-1. Fork / Clone This
+1. Fork / Clone This [Repo](https://github.com/frinzekt/mkdocs-frinze-template/tree/main)
    1. Follow the [installation](#installation)
 2. Delete the markdown files here and replace it with your own
 3. Maybe put your own Nav in the `mkdocs.yml` file
