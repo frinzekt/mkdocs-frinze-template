@@ -1,0 +1,58 @@
+site_name: MkDocs Frinze Template
+copyright: Copyright Frinze Erin Lapuz 2020
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    primary: amber
+    scheme: slate # "slate" is dark, "default" is white
+  logo: images/SHL.png
+  favicon: images/SHL.png
+  # features:
+  #   - navigation.tabs
+plugins:
+  - search
+  - mermaid2:
+      version: 8.8.2
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.smartsymbols
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+  - pymdownx.tabbed
+  - footnotes
+  - pymdownx.critic
+  - attr_list
+  - def_list
+  - pymdownx.tasklist
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - codehilite
+  - pymdownx.snippets:
+      base_path: docs
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.8.2/dist/mermaid.min.js
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+- Overview: index.md
