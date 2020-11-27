@@ -7,6 +7,14 @@ For full documentation visit:
 - [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) for the different extensions that are installed
 - [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) for the customisation of the web server documentation.
 
+## How easy is this to deploy?
+
+1. Fork / Clone This
+   1. Follow the [installation](#installation)
+2. Delete the markdown files here and replace it with your own
+3. Maybe put your own Nav in the `mkdocs.yml` file
+4. Deploy somewhere ! (easist way Github Pages see [here](#commands))
+   
 ## What inspired me to do this?
 I have seen that a lot of the documentation is really scattered for Mkdocs. Like the documentation is good and there are a lot of them, but all I really wanted was a generic template with most of the extensions that I will need without being caught up on which one to pick, and so on; so, I ended up creating this which aims to give you a very easy way to start your documentation. In addition, there was some hussle sometimes, in trying to figure out why some extensions aren't working, and it is just frustrating and time-consuming.
 
@@ -20,7 +28,7 @@ pip install -r requirements.txt
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs serve` - Start the live-reloading docs server. Very helpful when you want to take a look at the docs before deploying.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 * `mkdocs gh-deploy` - Deploy in github pages
