@@ -1,5 +1,5 @@
 # Welcome to MkDocs Frinze Template
-This is my template that I have created while I was working for a cool company. This is a template that contains extensions that are very nice to have when you just want a standard documentation for anything!
+This is my template that I have created while I was working for a cool workplaces namely [Lotterywest](https://www.lotterywest.wa.gov.au/) and [UWA System Health Lab](http://systemhealthlab.com/). This is a template that contains extensions that are very nice to have when you just want a standard documentation for anything!
 
 For full documentation visit:
 
