@@ -298,15 +298,15 @@ Can be done with Markdown or HTML.
 
 ### Image Captioning
 <figure>
-  <img src="/images/SHL.png" width="300" />
-  <figcaption>System Health Lab Logo</figcaption>
+  <img src="../images/docs.png" width="100" />
+  <figcaption>The Logo that Daphne from Coders for Causes gave me</figcaption>
 </figure>
 
 ??? Example "Syntax of Above"
     ```html
     <figure>
-        <img src="/images/SHL.png" width="300" />
-        <figcaption>System Health Lab Logo</figcaption>
+        <img src="../images/docs.png" width="100" />
+        <figcaption>The Logo that Daphne from Coders for Causes gave me</figcaption>
     </figure>
     ```
 

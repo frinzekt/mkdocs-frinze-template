@@ -1,14 +1,14 @@
 site_name: MkDocs Frinze Template
 copyright: Copyright Frinze Erin Lapuz 2020
-repo_url: https://github.com/frinzekt/mkdocs-frinze-template/tree/main
+repo_url: https://github.com/frinzekt/mkdocs-frinze-template/
 theme:
   name: material
   custom_dir: overrides
   palette:
-    primary: amber
-    scheme: slate # "slate" is dark, "default" is white
-  logo: images/SHL.png
-  favicon: images/SHL.png
+    primary: teal
+    scheme: default # "slate" is dark, "default" is white
+  logo: images/docs.png
+  favicon: images/docs.png
   # features:
   #   - navigation.tabs
 plugins:
@@ -16,7 +16,7 @@ plugins:
   - mermaid2:
       version: 8.8.2
       arguments:
-        theme: dark # change this as you see fit
+        theme: white # change this as you see fit
 
 markdown_extensions:
   - admonition
