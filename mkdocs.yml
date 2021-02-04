@@ -13,8 +13,6 @@ theme:
   #   - navigation.tabs
 plugins:
   - search
-  - with-pdf:
-      render_js: true
   - mermaid2:
       version: 8.8.2
       arguments:
@@ -59,5 +57,5 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Overview: index.md
-  - Extensions Installed Overview: extensions.md
+- Overview: index.md
+- Extensions Installed Overview: extensions.md
