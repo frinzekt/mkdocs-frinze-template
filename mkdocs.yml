@@ -13,7 +13,8 @@ theme:
   #   - navigation.tabs
 plugins:
   - search
-  - with-pdf
+  - with-pdf:
+      render_js: true
   - mermaid2:
       version: 8.8.2
       arguments:
