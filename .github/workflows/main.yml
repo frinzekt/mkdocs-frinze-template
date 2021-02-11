@@ -39,6 +39,8 @@ jobs:
         run: python3 -m pip install -r ./requirements.txt
 
       - run: mkdocs build
+        env: 
+          ENABLE_PDF_EXPORT: 1
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
