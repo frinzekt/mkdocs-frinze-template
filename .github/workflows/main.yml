@@ -20,4 +20,4 @@ jobs:
         # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EXTRA_PACKAGES: libcairo2-dev libpangocairo-1.0-0
+          EXTRA_PACKAGES: "build-base libcairo2-dev libpangocairo-1.0-0"
