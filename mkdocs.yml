@@ -17,6 +17,12 @@ plugins:
       version: 8.8.2
       arguments:
         theme: white # change this as you see fit
+  - with-pdf:
+      author: Frinze Erin Lapuz
+      cover_title: MkDocs Frinze Template
+      cover_subtitle: Making documentation easier
+      cover_logo: ./docs/images/docs.png
+      enabled_if_env: ENABLE_PDF_EXPORT
 
 markdown_extensions:
   - admonition
