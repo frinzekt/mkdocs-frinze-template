@@ -21,7 +21,7 @@ plugins:
       author: Frinze Erin Lapuz
       cover_title: MkDocs Frinze Template
       cover_subtitle: Making documentation easier
-      cover_logo: ./docs/images/shl.png
+      cover_logo: ./docs/images/docs.png
       enabled_if_env: ENABLE_PDF_EXPORT
 
 markdown_extensions:
