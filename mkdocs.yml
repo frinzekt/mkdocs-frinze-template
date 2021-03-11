@@ -3,13 +3,13 @@ copyright: Copyright Frinze Erin Lapuz 2020
 repo_url: https://github.com/frinzekt/mkdocs-frinze-template/
 theme:
   name: material
-  custom_dir: overrides
   palette:
     primary: teal
     scheme: default # "slate" is dark, "default" is white
   logo: images/docs.png
   favicon: images/docs.png
-  # features:
+  features:
+      - navigation.instant
   #   - navigation.tabs
 plugins:
   - search
