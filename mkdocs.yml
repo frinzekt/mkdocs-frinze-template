@@ -1,14 +1,34 @@
+# This configuration can be changed from this https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+# I will be putting comments on certain places where necessary
+
 site_name: MkDocs Frinze Template
 copyright: Copyright Frinze Erin Lapuz 2020
+author: Frinze Erin Lapuz # remove this if you removed the override/partial
+author_website: https://frinzelapuz.vercel.app/ # remove this if you removed the override/partial
 repo_url: https://github.com/frinzekt/mkdocs-frinze-template/
+
+# This uri refers to the github path to edit, change this if you branch is different in name
+edit_uri: edit/main/docs/
 theme:
   name: material
+  custom_dir: overrides # remove this if you removed the override/partial
   palette:
+  - media: "(prefers-color-scheme: light)" # below here is a palette for light mode
     primary: teal
-    scheme: default # "slate" is dark, "default" is white
+    scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"  # below here is a palette for dark mode
+    primary: teal
+    scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+
   logo: images/docs.png
   favicon: images/docs.png
-  features:
+  features: # Refer to https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
       - navigation.instant
   #   - navigation.tabs
 plugins:
@@ -16,14 +36,22 @@ plugins:
   - mermaid2:
       version: 8.8.2
       arguments:
-        theme: white # change this as you see fit
+        theme: white # change this as you see fit - ["white", "dark"]
+      
+  # This is the PDF Generator of the documentation
+  # More information here  https://github.com/orzih/mkdocs-with-pdf
+  # note at this current moment, to use this feature, the following must be met
+  # - Relative Path only with images
+  # - Mermaid Markdown doesn't render at the moment in PDF
   - with-pdf:
       author: Frinze Erin Lapuz
       cover_title: MkDocs Frinze Template
       cover_subtitle: Making documentation easier
       cover_logo: ./docs/images/docs.png
-      enabled_if_env: ENABLE_PDF_EXPORT
+      enabled_if_env: ENABLE_PDF_EXPORT # This prevents generation of pdf when using `mkdocs serve` because it takes a long time. This will however generate the PDF when the environment variable is setup OR in the github action
 
+# These are markdown extensions I have included that makes the documentation look nicer
+# These extensions are from here https://facelessuser.github.io/pymdown-extensions/
 markdown_extensions:
   - admonition
   - attr_list
@@ -57,11 +85,38 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:mermaid2.fence_mermaid
 
+extra:
+  social:
+    - icon: octicons/globe-16
+      link: https://frinzelapuz.vercel.app/
+    - icon: fontawesome/brands/github
+      link: https://github.com/frinzekt/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/frinze-erin-lapuz/
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:frinze.lapuz@gmail.com
+
+
+# Add google Analytics when you need it
+# Remove this if you dont need it
+# https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/
+google_analytics:
+  - UA-162451015-2 
+  - auto
+
+# This is the extra javascript included in the documentation
 extra_javascript:
   - https://unpkg.com/mermaid@8.8.2/dist/mermaid.min.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
+# If you want to put extra CSS
+# extra_css:
+#   - 
+
+# This is where you adjust the hierarchy if the documentation
+# You can erase this if you want. If you erase this, Mkdocs will alphabetically sort your documentation
 nav:
 - Overview: index.md
 - Extensions Installed Overview: extensions.md
+- Automatic Site Deployment: github-action.md
